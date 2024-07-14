@@ -20,8 +20,8 @@
 #     print(i)
 
 # Ex3: range(start, stop, step)
-for i in range(10, 21, 2):
-    print(i)
+# for i in range(10, 21, 2):
+#     print(i)
 
 # Bài 1: Nhập 2 số nguyên a và b từ bàn phím
     # Yêu cầu: in ra tất cả các số nguyên trong khoảng [a, b] hoặc ngược lại
@@ -53,9 +53,9 @@ for i in range(10, 21, 2):
 
 # # Sử dụng random
 #     # Khai báo thư viện
-# import random
+import random
 #     # Cú pháp sử dụng hàm trong thư viện: [Tên thư viện].[Tên hàm]
-# rd = random.randint(1,10)
+rd = random.randint(1,10)
 
 # # Yêu cầu: In ra màn hình bảng cửu chương của số vừa random: 5 * 1 = 5
 # for i in range(1, 11):
