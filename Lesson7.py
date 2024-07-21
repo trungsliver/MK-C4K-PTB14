@@ -31,10 +31,27 @@
 # print('Nhập dữ liệu thành công!')
 
 # Bài 4: Nhập vào số nguyên dương n. Tính tổng các chữ số của n.
-n = int(input('Nhập số nguyên dương n: '))
-sum = 0
+# n = int(input('Nhập số nguyên dương n: '))
+# sum = 0
 
-while n > 0:
-    sum = sum + n%10
-    n = n // 10
-print(f'Tổng các chữ số là: {sum}')
+# while n > 0:
+#     sum = sum + n%10
+#     n = n // 10
+# print(f'Tổng các chữ số là: {sum}')
+
+#  Đề bài: Tạo Mysterious Game
+    # Yêu cầu: tạo ra 1 số đặc biệt để đoán (random)
+    #  Người chơi cần nhập đến khi nào đoán đúng số đặc biệt thì dừng game
+import random
+number = random.randint(0,100)
+print('Số bí mật nè hihi:', number)
+count = 1
+n = int(input('\nNhập dự đoán của bạn: '))
+while n != number:
+    if n > number:
+        print(n, 'lớn hơn số cần tìm.')
+    else:
+        print(n, 'nhỏ hơn số cần tìm.')
+    n = int(input('\nNhập dự đoán của bạn: '))
+    count = count + 1
+print(f'Dự đoán thành công sau {count} lần!')
