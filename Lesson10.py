@@ -26,21 +26,31 @@ ptb14 = ['Nam', 'Tâm', 'Đức', 'Hải', 'Nguyên']
 
     # Update - Cập nhật/Chỉnh sửa danh sách
         # Thêm phần tử vào cuối danh sách - append()
-ptb14.append('Hưng')
+# ptb14.append('Hưng')
 
         # Thêm phần tử vào vị trí chỉ định - insert()
-ptb14.insert(3, 'Imposter')
+# ptb14.insert(3, 'Imposter')
 
         # Chỉnh sửa phần tử thông qua index
-ptb14[4] = 'meme'
+# ptb14[4] = 'meme'
 
     # Delete - Xóa phần tử danh sách
         # Xóa phần tử bằng giá trị - remove()
-ptb14.remove('Hưng')
+# ptb14.remove('Hưng')
 
         # Xóa phần tử bằng index - pop()
-ptb14.pop(3)
+# ptb14.pop(3)
 
         # Xóa toàn bộ phần tử danh sách - clear()
-ptb14.clear()
-print(ptb14)
+# ptb14.clear()
+# print(ptb14)
+
+arr = [5, 2, 8, 4, 6, 9, 1, 3]
+
+    # Sắp xếp các phần tử danh sách
+        # Sắp xếp tăng dần: sort()
+arr.sort()
+
+        # Sắp xếp giảm dần:
+arr.sort(reverse=True)
+print(arr)
