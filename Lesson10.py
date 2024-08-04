@@ -75,3 +75,37 @@ arr = []
 for i in range(1,16):
     arr.append(i)
 print(arr)
+
+    # YC2: In ra màn hình tổng các số chẵn
+sum = 0
+for item in arr:
+    if item%2 == 0:
+        sum = sum + item
+print('Tổng các phần tử chẵn là:', sum)
+
+    # YC3: In ra màn hình số lượng số lẻ
+count = 0
+for item in arr:
+    if item%2 == 1:
+        count = count + 1
+print('Số lượng các phần tử lẻ là:', count)
+
+    # YC4: In ra màn hình vị trí và giá trị của phần tử lớn nhất
+max_item = max(arr)
+for i in range(len(arr)):
+    if arr[i] == max(arr):
+        max_index = i
+print('Giá trị phần tử lớn nhất:', max_item)
+print('Vị trí phần tử lớn nhất:', max_index)
+
+    # YC5: In ra màn hình vị trí và giá trị của phần tử nhỏ nhất
+min_item = min(arr)
+for i in range(len(arr)):
+    if arr[i] == min(arr):
+        min_index = i
+print('Giá trị phần tử nhỏ nhất:', min_item)
+print('Vị trí phần tử nhỏ nhất:', min_index)
+
+    # YC6: Sắp xếp danh sách theo thứ tự giảm dần
+arr.sort(reverse=True)
+print(arr)
