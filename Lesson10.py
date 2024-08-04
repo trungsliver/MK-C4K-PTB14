@@ -45,12 +45,33 @@ ptb14 = ['Nam', 'Tâm', 'Đức', 'Hải', 'Nguyên']
 # ptb14.clear()
 # print(ptb14)
 
-arr = [5, 2, 8, 4, 6, 9, 1, 3]
+# arr = [5, 2, 8, 4, 6, 9, 1, 3]
 
     # Sắp xếp các phần tử danh sách
         # Sắp xếp tăng dần: sort()
-arr.sort()
+# arr.sort()
 
         # Sắp xếp giảm dần:
-arr.sort(reverse=True)
+# arr.sort(reverse=True)
+# print(arr)
+
+    # Tìm phần tử lớn nhất của danh sách - max()
+# print(max(arr))
+
+    # Tìm phần tử nhỏ nhất của danh sách - min()
+# print(min(arr))
+
+# ------------------ LUYỆN TẬP ----------------------
+# Bài 1: Cho danh sách gồm các số nguyên liên tiếp từ 1 đến 15
+    # YC1: In ra toàn bộ các phần tử của danh sách
+    # YC2: In ra màn hình tổng các số chẵn
+    # YC3: In ra màn hình số lượng số lẻ
+    # YC4: In ra màn hình vị trí và giá trị của phần tử lớn nhất
+    # YC5: In ra màn hình vị trí và giá trị của phần tử nhỏ nhất
+    # YC6: Sắp xếp danh sách theo thứ tự giảm dần
+                    # BÀI LÀM
+    # YC1: In ra toàn bộ các phần tử của danh sách
+arr = []
+for i in range(1,16):
+    arr.append(i)
 print(arr)
