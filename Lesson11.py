@@ -71,31 +71,39 @@ name = 'Hai meme'
 # print(string.capwords(name))
 
 # Chuyển đổi kiểu dữ liệu trong danh sách
-a = '1 2 3 4 5 6 7 8 9'
-arr = a.split()
-print(arr)
+# a = '1 2 3 4 5 6 7 8 9'
+# arr = a.split()
+# print(arr)
     # Cách 1:
-arr2 = []
-for item in arr:
-    a = int(item)
-    arr2.append(a)
-print(arr2)
+# arr2 = []
+# for item in arr:
+#     a = int(item)
+#     arr2.append(a)
+# print(arr2)
 
     # Cách 2:
-arr3 = [int(item) for item in arr]
-print(arr3)
+# arr3 = [int(item) for item in arr]
+# print(arr3)
 
 # Tính tổng phần tử danh sách
-tong = sum(item for item in arr2)
-print('Tổng phẩn tử danh sách:', tong)
+# tong = sum(item for item in arr2)
+# print('Tổng phẩn tử danh sách:', tong)
 
 # Tính tổng phần tử chẵn
-tong_chan = sum(item for item in arr2 if item%2 == 0)
-print('Tổng phần tử chẵn:', tong_chan)
+# tong_chan = sum(item for item in arr2 if item%2 == 0)
+# print('Tổng phần tử chẵn:', tong_chan)
 
 # Đếm phần tử lẻ trong danh sách
-dem_le = sum(1 for item in arr2 if item%2 == 1)
-print('Số phần tử lẻ:', dem_le)
+# dem_le = sum(1 for item in arr2 if item%2 == 1)
+# print('Số phần tử lẻ:', dem_le)
 
 # Bài 1: Nhập vào 1 xâu ký tự định dạng dd/mm/yyyy (11/08/2024)
     # Tách ngày, tháng, năm và hiển thị ra màn hình
+date1 = input('Nhập vào 1 xâu ký tự định dạng dd/mm/yyyy: ')
+        # Cách 1:
+date2 = date1.replace('/', ' tháng ', 1)
+date3 = date2.replace('/', ' năm ', 1)
+print(date3)
+        # Cách 2:
+arr = date1.split('/')
+print(f'Ngày {arr[0]} tháng {arr[1]} năm {arr[2]}')
